@@ -1,0 +1,523 @@
+body {
+	font-family: Arial, Helvetica;
+    margin: 0;
+}
+
+/******************************************************************/
+
+.backcover {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: url("img/Background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -999;
+}
+
+/******************************************************************/
+
+#buttonStart {
+	position: fixed;
+    top: 35%; 
+    left: 35%;
+    bottom: 35%; 
+    right: 35%;
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    padding:1em;
+    border-radius: 25px;
+	background-color: green;
+    border: 2.5px solid white;
+	cursor: pointer;
+}
+
+/******************************************************************/
+
+#left1 {
+    border: 5px solid black;
+    float: left;
+    width: calc(60% - 10px - 360px);
+    height: 450px;
+    margin: 150px 10px 0 350px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
+}
+
+#right1 {
+    border: 5px solid black;
+    float: right;
+    width: calc(40% - 10px - 360px);
+    height: 450px;
+    background-color: rgba(255,255,255, 0.95);
+    margin: 150px 350px 0 10px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+#left2 {
+    /*border: 5px solid black;*/
+    float: left;
+    width: calc(60% - 10px - 360px);
+    height: 200px;
+    /*background-color: white;*/
+    margin: 20px 10px 50px 350px;
+}
+
+#textoButoes {
+	font-size: 175%;
+	font-weight: bold;
+}
+
+#right2 {
+    border: 5px solid black;
+    float: right;
+    width: calc(40% - 10px - 360px);
+    height: 150px;
+    background-color: rgba(255,255,255, 0.95);
+    margin: 20px 350px 50px 10px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+/******************************************************************/
+
+#button1 {
+    margin: 0 0 0 10%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: url("img/Eventos.png") no-repeat center center;
+    background-size: 75%;
+    background-position-y: 17px;
+    background-color: rgba(175,175,175, 0.95);
+    cursor: pointer;
+}
+
+#button2 {
+    margin: 0 0 0 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: url("img/ChamarEmpregado.png") no-repeat center center;
+    background-size: 75%;
+    background-position-y: 15px;
+    background-position-x: 20px;
+    background-color: rgba(175,175,175, 0.95);
+    cursor: pointer;
+}
+
+#button3 {
+    margin: 0 0 0 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: url("img/Classificar.png") no-repeat center center;
+    background-size: 85%;
+    background-position-y: -10px;
+    background-position-x: 10px;
+    background-color: rgba(175,175,175, 0.95);
+    cursor: pointer;
+}
+
+#button4 {
+    margin: 0 0 0 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: url("img/Ajuda.png") no-repeat center center;
+    background-size: 65%;
+    background-color: rgba(175,175,175, 0.95);
+    cursor: pointer;
+}
+
+#eventos{
+  width: 100%;
+  height: 100%;
+  background-image: url("img/eventos2.png")
+}
+
+
+#ajuda {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#ajuda img {
+  max-height: 35vh;
+  margin-top: 10px;
+}
+
+#ajuda2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#ajuda2 img {
+  max-height: 35vh;
+  margin-top: 10px;
+}
+
+#ajuda3 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#ajuda3 img {
+  max-height: 35vh;
+  margin-top: 10px;
+}
+
+#ajuda4 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#ajuda4 img {
+  max-height: 35vh;
+  margin-top: 10px;
+}
+
+#ajuda5 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#ajuda5 img {
+  max-height: 35vh;
+  margin-top: 10px;
+}
+
+/******************************************************************/
+
+#tabs{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs button{
+  font-size: 1.4em;
+  position: relative;
+  background: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+  background-image: -webkit-linear-gradient(top, #fff, #ddd);
+  background-image: -moz-linear-gradient(top, #fff, #ddd);
+  background-image: -ms-linear-gradient(top, #fff, #ddd);
+  background-image: -o-linear-gradient(top, #fff, #ddd);
+  background-image: linear-gradient(to bottom, #fff, #ddd);
+  height: 40px;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  border-radius: 5px 5px 0 0;
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  border: none;
+  position: relative;
+  z-index: 3;
+  flex-grow: 1;
+}
+
+#tabs button:hover,
+#tabs button:hover::after,
+#tabs button:focus,
+#tabs button:focus::after{
+  background: #fff;
+}
+
+#tabs button:focus{
+  outline: 0;
+}
+
+#tabs #current{
+  background: #fff;
+  z-index: 3;
+}
+
+#content
+{
+  background: #fff;
+  padding: 2em;
+  height: calc(100% - 4em - 40px);
+  position: relative;
+  z-index: 2; 
+  -moz-border-radius: 0 5px 5px 5px;
+  -webkit-border-radius: 0 5px 5px 5px;
+  border-radius: 0 0px 5px 5px;
+  -moz-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+}
+
+#content h2, #content h3, #content p
+{
+    margin: 0 0 15px 0;
+}
+
+/******************************************************************/
+
+.products li{
+    list-style: none;
+    margin-top: 2%;
+    font-size: 115%;
+    font-family: Arial, monospace;
+}
+
+/******************************************************************/
+
+#empregado {
+	width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 155px;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+  z-index: 5;
+}
+
+#empregado img {
+	max-height: 30vh;
+}
+
+/******************************************************************/
+
+#confirmacao {
+  text-align: center;
+  position: absolute;
+  top: 23%;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+}
+
+#cancelar {
+  text-align: center;
+  position: absolute;
+  top: 23%;
+  left: 365px;
+  width: calc(60% - 10px - 360px - 20px);
+}
+
+.sim{
+    color: white;
+    text-align: center;
+    position: absolute;
+    border: 1%;
+    border-radius: 0.5em;
+    top: 120%;
+    width: 20%;
+    height: 60%;
+    left: 25%;
+    background-color: green;
+}
+
+.nao{
+    color: white;
+    text-align: center;
+    position: absolute;
+    border: 1%;
+    border-radius: 0.5em;
+    top: 120%;
+    width: 20%;
+    height: 60%;
+    left: 55%;
+    background-color: red;
+}
+
+/******************************************************************/
+
+#confirm{
+    position: relative;
+    left: 10%;
+    top: 74%;
+    border: solid 0.1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    height: 50px;
+    width: 40%;
+    font-size: 100%;
+    background-color: green;
+    color: white;
+}
+
+#cancel{
+    position: relative;
+    top: 74%;
+    left: 3%;
+    border: solid 0.1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    height: 50px;
+    width: 40%;
+    font-size: 100%;
+    background-color: red;
+    color: white;
+}
+
+/******************************************************************/
+
+#currentOrder{
+    font-family: Arial, monospace;
+    position: relative;
+    /*border: solid green 0.1em;*/
+    height: 83.2%;
+    overflow: auto;
+    width: 99%;
+}
+
+#currentOrder > div {
+	display: flex;
+	width: 100%;
+	align-content: center;
+	line-height: 26.65px;
+	justify-content: space-between;
+	margin: 6px 0;
+}
+
+#currentOrder > div > div {
+	padding-right: 10px;
+}
+
+#currentOrder p {
+	padding-left: 10px;
+	margin: 0;
+}
+
+#sumB{
+    position: relative;
+    border: none;
+    width: 2em;
+    height: 2em;
+    background: url('img/plus-button-icon.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+#minusB{
+    position: relative;
+    border: none;
+    width: 2em;
+    height: 2em;
+    background: url('img/minus-button-icon.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+#cancelB{
+    position: relative;
+    border: none;
+    width: 2em;
+    height: 2em;
+    background: url('img/cross-button-icon.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+#PedidoAtual{
+    border-bottom: solid;
+}
+
+#ClassificacaoAtual{
+	position: flex;
+	border-bottom: solid;
+}
+
+/******************************************************************/
+
+#classificar {
+  text-align: center;
+  height: 100%;
+}
+
+#classificarTotal {
+  overflow: auto;
+  text-align: center;
+  width: 99.4%;
+  height: 83.2%;
+  z-index: 5;
+}
+
+/********************************************************************/
+
+.classificado {
+  display: flex;
+  align-items: center;
+}
+
+.classificado img {
+  width: 20%;
+  margin-left: 6%;
+}
+
+.estrelas {
+  margin-left: 10%;
+}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+
+i.fa {
+  color: #CCC;
+  font-size: 40px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+i.fa.active {
+	color: #FC0;
+}
+
+.classificado div {
+	margin-left: 10%;
+	padding: 2px 5px;
+	font-size: 30px;
+}
+
+.estrelas span {
+  margin-left: 5px;
+}
+
+.estrelas label {
+  margin-left: 4px;
+}
+
+/********************************************************************/
+

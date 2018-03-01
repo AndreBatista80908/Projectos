@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--tipo de formatacao de texto-->
+    <title>ComISTo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="left1">
+
+	    <div id="tabs" style="display: flex;">
+	        <button name="tab1"><img src="img/bowl.png">&nbsp;Aperitivos</a>
+	        <button name="tab2"><img src="img/restaurant.png">&nbsp;Pratos</a>
+	        <button name="tab3"><img src="img/water.png">&nbsp;Bebidas</a>
+	        <button name="tab4"><img src="img/ice-cream.png">&nbsp;Sobremesas</a>
+	    </div>
+
+		<div id="content" style="display: block;"> 
+		    
+		    <div id="tab1">
+		        <ul class="products">
+                    <li><a id="pistachiosC" href="#" onclick="addItem('Pistachios', 0.60, 'pistachios');"><img src="img/pistachios.png"; style="position: absolute; width: 20%; top:5%;  left: 05%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 7.5%"></a></li>
+                    <li><a id="amendoinsC" href="#" onclick="addItem('Amendoins', 0.60, 'amendoins');"><img src="img/amendoins.png"; style="position: absolute; width: 20%; top:5%;  left: 27%"><img src="img/5Star.png"; style="position: absolute; width: 15%; top:41%; left: 29.5%"></a></li>
+                    <li><a id="milhoC" href="#" onclick="addItem('Milho Frito', 0.60, 'milho');"><img src="img/milho.png"; style="position: absolute; width: 20%; top:5%;  left: 49%"><img src="img/2Star.png"; style="position: absolute; width: 15%; top:41%; left: 51.5%"></a></li>
+	                <li><a id="tremocosC" href="#" onclick="addItem('Tremoços', 0.50, 'tremocos');"><img src="img/tremocos.png"; style="position: absolute; width: 20%; top:5%;  left: 71%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:41%; left: 73.5%"></a></li>
+	                <li><a id="azeitonasC" href="#" onclick="addItem('Azeitonas', 0.50,'azeitonas');"><img src="img/azeitonas.png"; style="position: absolute; width: 20%; top:50%; left: 05%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 7.5%"></a></li>
+                </ul>  
+		    </div>
+
+		    <div id="tab2">
+		        <ul class="products">
+                    <li><a id="hamburguerC" href="#" onclick="addItem('Hamburguer', 3.50,'hamburguer');"><img src="img/hamburguer.png"; style="position: absolute; width: 20%; top:5%; left: 05%"><img src="img/5Star.png"; style="position: absolute; width: 15%; top:41%; left: 7.5%"></a></li>
+                    <li><a id="tostadeatumC" href="#" onclick="addItem('Tosta de Atum', 2.30, 'tostadeatum');"><img src="img/tostadeatum.png"; style="position: absolute; width: 20%; top:5%;  left: 27%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 29.5%"></a></li>
+                    <li><a id="tostadefrangoC" href="#" onclick="addItem('Tosta de Frango', 2.40,'tostadefrango');"><img src="img/tostadefrango.png"; style="position: absolute; width: 20%; top:5%; left: 49%"><img src="img/2Star.png"; style="position: absolute; width: 15%; top:41%; left: 51.5%"></a></li>
+                    <li><a id="tostamistaC" href="#" onclick="addItem('Tosta Mista', 2.10,'tostamista');"><img src="img/tostamista.png"; style="position: absolute; width: 20%; top:5%;  left: 71%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 73.5%"></a></li>
+                    <li><a id="cachorroC" href="#" onclick="addItem('Cachorro quente', 1.80,'cachorro');"><img src="img/cachorro.png"; style="position: absolute; width: 20%; top:50%; left: 05%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 7.5%"></a></li>
+	                <li><a id="bitoqueC" href="#" onclick="addItem('Bitoque', 4.00,'bitoque');"><img src="img/bitoque.png"; style="position: absolute; width: 20%; top:50%; left: 27%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 29.5%"></a></li>
+	                <li><a id="saladaC" href="#" onclick="addItem('Salada', 3.80,'salada');"><img src="img/salada.png"; style="position: absolute; width: 20%; top:50%; left: 49%"><img src="img/1Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 51.5%"></a></li>
+		    </div>
+
+		    <div id="tab3">
+		        <ul class="products">
+	                <li><a id="aguaC" href="#" onclick="addItem('Água', 1.00, 'agua');"><img src="img/agua.png"; style="position: absolute; width: 20%; top:5%;  left: 05%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 7.5%"></a></li>
+	                <li><a id="aguacomgasC" href="#" onclick="addItem('Água com gas', 1.20, 'aguacomgas');"><img src="img/aguacomgas.png"; style="position: absolute; width: 20%; top:5%;  left: 27%"><img src="img/5Star.png"; style="position: absolute; width: 15%; top:41%; left: 29.5%"></a></li>
+	                <li><a id="cafeC" href="#" onclick="addItem('Café', 0.60, 'cafe');"><img src="img/cafe.png"; style="position: absolute; width: 20%; top:5%;  left: 49%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:41%; left: 51.5%"></a></li>
+	                <li><a id="descafeinadoC" href="#" onclick="addItem('Descafeinado', 0.50, 'descafeinado');"><img src="img/descafeinado.png"; style="position: absolute; width: 20%; top:5%;  left: 71%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:41%; left: 73.5%"></a></li>
+	                <li><a id="cocacolaC" href="#" onclick="addItem('Coca-Cola', 1.50,'cocacola');"><img src="img/cocacola.png"; style="position: absolute; width: 20%; top:50%; left: 05%"><img src="img/2Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 7.5%"></a></li>
+	                <li><a id="sevenupC" href="#" onclick="addItem('SevenUp', 1.50,'sevenup');"><img src="img/sevenup.png"; style="position: absolute; width: 20%; top:50%; left: 27%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 29.5%"></a></li>
+	                <li><a id="limonadaC" href="#" onclick="addItem('Limonada', 1.50,'limonada');"><img src="img/limonada.png"; style="position: absolute; width: 20%; top:50%; left: 49%"><img src="img/5Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 51.5%"></a></li>
+                    <li><a id="SumoDeLaranjaC" href="#" onclick="addItem('Sumo de Laranja', 1.50, 'SumoDeLaranja');"><img src="img/SumoDeLaranja.png"; style="position: absolute; width: 20%; top:50%;  left: 71%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 73.5%"></a></li>
+	            </ul>
+		    </div>
+
+		    <div id="tab4">
+		        <ul class="products">
+	                <li><a id="boloC" href="#" onclick="addItem('Bolo', 1.00, 'bolo');"><img src="img/bolo.png"; style="position: absolute; width: 20%; top:5%;  left: 05%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 7.5%"></a></li>
+	                <li><a id="crepeC" href="#" onclick="addItem('Crepe', 1.50, 'crepe');"><img src="img/crepe.png"; style="position: absolute; width: 20%; top:5%;  left: 27%"><img src="img/2Star.png"; style="position: absolute; width: 15%; top:41%; left: 29.5%"></a></li>
+	                <li><a id="geladoC" href="#" onclick="addItem('Gelado', 1.20, 'gelado');"><img src="img/gelado.png"; style="position: absolute; width: 20%; top:5%;  left: 49%"><img src="img/3Star.png"; style="position: absolute; width: 15%; top:41%; left: 51.5%"></a></li>
+	                <li><a id="mousseC" href="#" onclick="addItem('Mousse de Chocolate', 1.20, 'mousse');"><img src="img/mousse.png"; style="position: absolute; width: 20%; top:5%;  left: 71%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:41%; left: 73.5%"></a></li>
+	                <li><a id="frutaC" href="#" onclick="addItem('Salada de Fruta', 1.00,'fruta');"><img src="img/fruta.png"; style="position: absolute; width: 20%; top:50%; left: 05%"><img src="img/4Star.png"; style="position: absolute; width: 15%; top:85.7%; left: 7.5%"></a></li>
+	            </ul>
+		    </div>
+		</div>
+
+        <div id="eventos" style="display: none;">
+            <button style="position: absolute; right: 41.75%; top: 158px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#eventos');">X</button>
+        </div>
+
+	    <div id="empregado" style="display: none;">
+	    	<button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeEmpregado();">X</button>
+            <h2>
+                <br>
+            	O empregado irá deslocar-se com a maior brevidade à sua mesa. Obrigado.<br>
+            	<img src="img/Empregado.jpg">
+            </h2>
+        </div>
+
+        <div id="classificar" style="display: none;">
+        	<button style="position: absolute; right: 41.65%; top:158px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#classificar');">X</button>
+            <div id="BotaoC" style="display: none;"><button style="position: absolute; right: 42.65%; top:550px; border-radius:25px; width: 2.5%; height: 4%; color:white; background-color:green;"onclick="okClassify();"><img src="img/confi.png" style="left: 8%;"> </button></div>
+        	<div id="ClassificacaoAtual"><h2><center>Classifique O Seu Pedido</center></h2></div>
+        	<div style="z-index: 5;" id = "classificarTotal"></div>
+            <div id="info" style="z-index: -5 position: absolute; font-size: 1.5em; font-weight: bold; margin-top: -25%"> Faça o seu pedido </div>
+        </div>
+
+        <div id="ajuda" style="display: none;">
+            <h2>
+                <button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#ajuda');">X</button>
+                <img src="img/ajuda1.png">
+                <button style="position: absolute; right: 1%; top:95%; border-radius:25px; width: 8%; height: 8%; color:white; background-color:green;"onclick="changeImage('#ajuda','#ajuda2');"><h2 style="margin-top: 4px"/> > </h2> </button>
+            </h2>
+        </div>
+
+        <div id="ajuda2" style="display: none;">
+            <h2>
+                <button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#ajuda2');">X</button>
+                <img src="img/ajuda2.png">
+                <button style="position: absolute; right: 1%; top:95%; border-radius:25px; width: 8%; height: 8%; color:white; background-color:green;"onclick="changeImage('#ajuda2','#ajuda3');"><h2 style="margin-top: 4px"/> > </h2> </button>
+            </h2>
+        </div>
+
+        <div id="ajuda3" style="display: none;">
+            <h2>
+                <button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#ajuda3');">X</button>
+                <img src="img/ajuda3.png">
+                <button style="position: absolute; right: 1%; top:95%; border-radius:25px; width: 8%; height: 8%; color:white; background-color:green;"onclick="changeImage('#ajuda3','#ajuda4');"><h2 style="margin-top: 4px"/> > </h2> </button>
+            </h2>
+        </div>
+
+        <div id="ajuda4" style="display: none;">
+            <h2>
+                <button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#ajuda4');">X</button>
+                <img src="img/ajuda4.png">
+                <button style="position: absolute; right: 1%; top:95%; border-radius:25px; width: 8%; height: 8%; color:white; background-color:green;"onclick="changeImage('#ajuda4','#ajuda5');"><h2 style="margin-top: 4px"/> > </h2> </button>
+            </h2>
+        </div>
+
+        <div id="ajuda5" style="display: none;">
+            <h2>
+                <button style="position: absolute; right: 1%; top:3px; border-radius:25px; width: 75px; height: 20px; color:white; background-color:red;"onclick="closeIt('#ajuda5');">X</button>
+                <img src="img/ajuda5.png">
+                <button style="position: absolute; right: 1%; top:95%; border-radius:25px; width: 8%; height: 8%; color:white; background-color:green;"onclick="changeImage('#ajuda5','#left1 #content, #left1 #tabs');"><h2 style="margin-top: 4px"/> > </h2> </button>
+            </h2>
+        </div>
+
+
+        <div id="confirmacao" style="display: none;">
+            <h2>
+                <center><p>Tem a certeza que pretende confirmar o pedido? <br> <i style="font-size: 75%">(uma vez confirmado o seu pedido, não poderá cancelá-lo)</i></p></center>
+                <button class="sim" onclick="apagarPedido1();"><img src="img/confi.png" style="position: absolute; left: 8%">Sim</button>
+                <button class="nao" onclick="retroceder1();"><img src="img/cancel.png" style="position: absolute; left: 8%">Não</button>
+            </h2>
+        </div>
+
+        <div id="cancelar" style="display: none;">
+            <h2>
+                <center><p>Tem a certeza que pretende cancelar o pedido? <br> <i style="font-size: 75%">(uma vez cancelado o seu pedido, não poderá retroceder)</i></p></center>
+                <h2><button class="sim" onclick="apagarPedido2();"><img src="img/confi.png" style="position: absolute; left: 8%">Sim</button></h2>
+                <h2><button class="nao" onclick="retroceder2();"><img src="img/cancel.png" style="position: absolute; left: 8%">Não</button></h2>
+            </h2>
+        </div>
+        
+    </div>
+
+    <div id="right1">
+    	<div id="PedidoAtual">
+    		<h2><center>Pedido Atual</center></h2>
+    	</div>
+        <div id="currentOrder"></div>
+    </div>
+
+    <div id="left2">
+        <button id="button1" onclick="showDiv4('#eventos');">
+        </button>
+        <button id="button2" onclick="showDiv2();">
+        </button>
+        <button id="button3" onclick="showDiv4('#classificar');">
+        </button>
+        <button id="button4" onclick="showDiv4('#ajuda');">
+        </button>
+        
+        <div id = "textoButoes">
+        	<a style=" position: absolute; margin-left: 5%; margin-top: 0.5%; color: white;">Eventos</a>
+        </div>
+        <div id = "textoButoes">
+	        <a style="position: absolute; margin-left: 14%; margin-top: 0%; color: white;">Chamar</a>
+	        <a style="position: absolute;  margin-left: 12.7%; margin-top: 1.2%; color: white;">Empregado</a>
+	    </div>
+	    <div id = "textoButoes">
+	        <a style="position: absolute;  margin-left: 22.5%; margin-top: 0.5%; color: white;">Classificar</a>
+	    </div>
+	    <div id = "textoButoes">
+	        <a style="position: absolute; margin-left: 33%; margin-top: 0.5%; color: white;">Ajuda</a>
+        </div>
+       
+    </div>
+
+    <div id="right2">
+        <div>
+            <h2><p id="orderTotal" style="font-family: Arial, monospace;">&nbsp;&nbsp;Total do pedido:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<var id="total" style="font-family: Arial, monospace; font-weight: normal">0.00€</var></p></h2>
+            <button id="cancel" type="button" style="font-family: Arial, monospace" onclick="showDivCancelar();"><img src="img/cancel.png" style="position: absolute; left: 8%">  Cancelar</button>
+            <button id="confirm" type="button" style="font-family: Arial, monospace" onclick="showDivConfirmacao();"><img src="img/confi.png" style="position: absolute; left: 8%">  Confirmar</button>
+        </div>
+    </div>
+
+    <div class="backcover"></div>
+</body>
+</html>
